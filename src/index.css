@@ -1,0 +1,257 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.light {
+  --bg: rgba(247, 247, 247, 1);
+  --cardColor: white;
+  --color: black;
+  --input: inherit;
+  --menuIcon: black;
+}
+
+.dark {
+  --bg: black;
+  --color: white;
+  --cardColor: rgba(24, 24, 24, 1);
+  --input: white;
+  --menuIcon: white;
+}
+
+.dashboard {
+  width: 100%;
+  background-color: var(--bg);
+  padding: 1.5em 1em;
+  min-height: 100vh;
+  color: var(--color);
+}
+
+.content {
+  display: flex;
+  width: 100%;
+}
+
+@media only screen and (max-width: 950px) {
+  .content {
+    flex-wrap: wrap;
+  }
+  .left {
+    width: 100% !important;
+    margin-right: 0 !important;
+  }
+  .right {
+    width: 100% !important;
+    margin-right: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  .firstLeftContainer {
+    margin-top: 2em !important;
+  }
+}
+
+.left {
+  width: 70%;
+  margin-right: 15px;
+}
+
+.right {
+  width: 30%;
+}
+
+.firstLeftContainer {
+  height: 16em;
+  padding: 10px;
+  background-image: linear-gradient(to right, rgb(216, 167, 76), #209fc5);
+  border-radius: 10px;
+  width: 100%;
+}
+
+.head1 {
+  color: white;
+  padding: 0 1em;
+}
+
+.firstRightContainer {
+  height: 16em;
+  padding: 10px;
+  background-color: var(--cardColor);
+  border-radius: 10px;
+  box-shadow: 0 0 #0000, 0 0 #0000, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.secondRightContainer {
+  margin-top: 10px;
+  height: 25em;
+  padding: 10px;
+  background-color: var(--cardColor);
+  border-radius: 10px;
+  box-shadow: 0 0 #0000, 0 0 #0000, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.head2 {
+  padding: 10px;
+  margin: 0;
+}
+
+.secondLeftContainer {
+  margin: 1.5em 0;
+}
+
+.secondConHeading {
+  padding: 7px 0;
+  margin: 0;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.card {
+  padding: 10px;
+  background-color: var(--cardColor);
+  border-radius: 10px;
+  box-shadow: 0 0 #0000, 0 0 #0000, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.cardMedia {
+  height: 150px;
+  width: 100%;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.cardHead {
+  margin: 0;
+  padding-top: 10px;
+}
+
+.Avatar {
+  margin-top: 20px;
+}
+
+.topCategories {
+  margin-top: 10px;
+}
+
+.topCategoriesCon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.num {
+  margin: 0;
+  margin-right: 10px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.name {
+  margin: 0;
+}
+
+.pos {
+  color: lightslategray;
+  margin: 0;
+}
+
+.button {
+  background-color: #846cea;
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+
+.btnName {
+  margin: 0;
+}
+
+.appBar {
+  background-color: var(--bg) !important;
+}
+
+.appbarContent {
+  display: flex;
+  padding: 15px;
+  align-items: center;
+}
+
+.searchContainer {
+  display: flex;
+  margin-right: 1em;
+  width: 100%;
+}
+
+.drawerPaper {
+  width: 80 !important;
+  background-color: var(--bg) !important;
+}
+
+.icon {
+  color: var(--color);
+  padding: 20px 0;
+}
+
+.menuIcon {
+  color: var(--menuIcon);
+}
+
+.MuiDrawer-paper {
+  width: 80px !important;
+  background-color: var(--cardColor) !important;
+}
+
+.search {
+  position: relative;
+  background-color: var(--cardColor) !important;
+  margin-left: 0;
+  box-shadow: 0 0 #0000, 0 0 #0000, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.avatar {
+  margin-right: 0.3em;
+}
+
+@media only screen and (max-width: 600px) {
+  /* .avatar {
+    display: none !important;
+  } */
+  .appbarContent {
+    justify-content: flex-start;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .appBar {
+    width: calc(100% - 80px) !important;
+    margin-left: 80px !important;
+  }
+  .drawer {
+    width: 80px !important;
+    flex-shrink: 0 !important;
+  }
+}
