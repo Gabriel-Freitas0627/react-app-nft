@@ -1,3 +1,5 @@
+import { CardData } from "../../constant/CardData";
+import { TopCategoriesData } from "../../constant/TopCategoriesData";
 import Cards from "./components/Cards";
 import TopCategories from "./components/TopCategories";
 
@@ -12,15 +14,15 @@ const DashBoard = () => {
           <div className="secondLeftContainer">
             <h3 className="secondConHeading">Explore</h3>
             <div className="cards">
-              <Cards />
-              <Cards />
-              <Cards />
-              <Cards />
-              <Cards />
-              <Cards />
-              <Cards />
-              <Cards />
-              <Cards />
+              {CardData.map((items, index) => (
+                <Cards
+                  cardImage={items.image}
+                  cardHeading={items.cardHeading}
+                  cardSubheading={items.cardSubheading}
+                  peopleImage={items.peopleImage}
+                  key={index}
+                />
+              ))}
             </div>
           </div>
         </div>
@@ -28,9 +30,15 @@ const DashBoard = () => {
           <div className="firstRightContainer">
             <h3 className="head2">Top Categories</h3>
             <div className="topCategories">
-              <TopCategories num='1' />
-              <TopCategories num='2' />
-              <TopCategories num='3' />
+              {TopCategoriesData.map((items, index) => (
+                <TopCategories
+                  number={items.number}
+                  image={items.image}
+                  name={items.name}
+                  position={items.position}
+                  key={index}
+                />
+              ))}
             </div>
           </div>
           <div className="secondRightContainer">
