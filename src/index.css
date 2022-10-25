@@ -145,6 +145,8 @@ body {
 
 .topCategories {
   margin-top: 10px;
+  overflow-y: auto;
+  height: 11em;
 }
 
 .topCategoriesCon {
