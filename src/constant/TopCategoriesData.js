@@ -18,16 +18,4 @@ export const TopCategoriesData = [
     name: "Johnathan",
     position: "Actor",
   },
-  {
-    number: "4",
-    image: People,
-    name: "Johnathan",
-    position: "Actor",
-  },
-  {
-    number: "5",
-    image: People,
-    name: "Johnathan",
-    position: "Actor",
-  },
 ];
